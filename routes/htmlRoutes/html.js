@@ -2,9 +2,11 @@ const Router = require('express').Router();
 const path = require('path');
 
 Router.get('/', (req, res) =>
-  res.sendFile(path.join(__dirname, '../public/index.html'))
+//sends user to the index.html file the ../.. indicates we are going back a directory since public is not within the current directory
+  res.sendFile(path.join(__dirname, '../../public/index.html'))
 );
 Router.get('/notes', (req, res) =>
-  res.sendFile(path.join(__dirname, '../public/notes.html'))
+//sends the user to the notes html
+  res.sendFile(path.join(__dirname, '../../public/notes.html'))
 );
 module.exports = Router;

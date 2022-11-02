@@ -2,9 +2,6 @@
 const apiRoutes = require('./routes/apiRoutes/api');
 const htmlRoutes = require('./routes/htmlRoutes/html');
 const express = require('express')
-const path = require('path');
-const fs = require('fs');
-// Helper method for generating unique ids
 
 const PORT = 3001;
 
