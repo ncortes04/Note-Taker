@@ -1,6 +1,6 @@
 //const that grab the files we created in routes folder
-const apiRoutes = require('./routes/apiRoutes/api');
-const htmlRoutes = require('./routes/htmlRoutes/html');
+const apiRoutes = require('./routes/apiRoutes');
+const htmlRoutes = require('./routes/htmlRoutes');
 const express = require('express')
 //the port we will be using
 const PORT = 3001;
