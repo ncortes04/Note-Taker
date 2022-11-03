@@ -10,7 +10,7 @@ Router.get('/notes', (req, res) =>
   res.sendFile(path.join(__dirname, '../../public/notes.html'))
 );
 //fallback to this function of all directories fail
-router.get('*', (req, res) => {
+Router.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../../public/index.html'));
 });
 
